@@ -6,7 +6,8 @@ Rails.application.routes.draw do
 
   #Login Routes
   get '/signin', to: 'sessions#new'
-  get '/signin', to: 'sessions#create'
+  post '/signin', to: 'sessions#create'
+  #Logout Routes
+  delete '/logout', to: 'sessions#destroy'
 
-  
 end
