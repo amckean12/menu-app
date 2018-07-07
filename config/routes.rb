@@ -3,4 +3,10 @@ Rails.application.routes.draw do
   resources :meals
   resources :users
   resources :recipes
+
+  #Login Routes
+  get '/signin', to: 'sessions#new'
+  get '/signin', to: 'sessions#create'
+
+  
 end
