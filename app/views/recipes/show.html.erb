@@ -13,7 +13,12 @@
       </ul>
     </div>
     <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4" id="user_content">
-      <h1><%= @user.first_name%>'s Menu</h1>
+       <h1><%= @recipe.name %></h1>
+       <h2>Calories: <%= @recipe.calories %></h2>
+       <h2>Protein: <%= @recipe.protein %></h2>
+       <h2>Carbs: <%= @recipe.carbs %></h2>
+       <h2>Fats: <%= @recipe.fat %></h2>
+
     </div>
   </div>
 </div>

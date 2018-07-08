@@ -1,0 +1,49 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4" id="nav">
+      <ul>
+        <div id="nav_elements">
+          <li id="profile_image">Profile Image</li>
+          <li id="nav_route"><%= link_to @user.first_name, user_path(@user) %></li>
+          <li id="nav_route"><%= link_to "Build Menu", new_menu_path %></li>
+          <li id="nav_route"><%= link_to "Recipes", recipes_path %></li>
+          <li id="nav_route"><%= link_to "People", users_path%></li>
+          <li id="nav_route"><%= link_to "Log Out", logout_path, method: :delete %></li>
+        </div>
+      </ul>
+    </div>
+    <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4" id="build_menu_content">
+                <h1>Recipes</h1>
+                <table class="table">
+  <thead>
+    <tr>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <td><strong>Name</strong></td>
+      <td><strong>Calories</strong></td>
+      <td><strong>Protein</strong></td>
+      <td><strong>Carbs</strong></td>
+      <td><strong>Fats</strong></td>
+      <td><strong>Recipe Page</strong></td>
+    </tr>
+    <% @recipes.each do |recipe| %>
+      <tr>
+
+        <td><%= recipe.name %></td>
+        <td><%= recipe.calories %></td>
+        <td><%= recipe.protein %></td>
+        <td><%= recipe.carbs %></td>
+        <td><%= recipe.protein %></td>
+        <td><%= link_to "View Recipe", recipe_path(recipe)%></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+                <%= link_to "Make a Recipe", new_recipe_path%>
+    </div>
+  </div>
+</div>

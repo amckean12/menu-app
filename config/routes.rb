@@ -3,11 +3,13 @@ Rails.application.routes.draw do
   resources :meals
   resources :users
   resources :recipes
+  resources :menu
 
   #Login Routes
   get '/signin', to: 'sessions#new'
   post '/signin', to: 'sessions#create'
   #Logout Routes
   delete '/logout', to: 'sessions#destroy'
+
 
 end

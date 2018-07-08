@@ -3,17 +3,17 @@
     <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4" id="nav">
       <ul>
         <div id="nav_elements">
-          <li id="profile_image">This is where and image is gonnna be</li>
+          <li id="profile_image">Profile Image</li>
           <li id="nav_route"><%= link_to @user.first_name, user_path(@user) %></li>
-          <li id="nav_route"><%= link_to "Build Menu", new_menu_path%></li>
+          <li id="nav_route"><%= link_to "Build Menu", new_menu_path %></li>
           <li id="nav_route"><%= link_to "Recipes", recipes_path %></li>
           <li id="nav_route"><%= link_to "People", users_path%></li>
           <li id="nav_route"><%= link_to "Log Out", logout_path, method: :delete %></li>
         </div>
       </ul>
     </div>
-    <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4" id="user_content">
-      <h1><%= @user.first_name%>'s Menu</h1>
+    <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4" id="build_menu_content">
+                <h1>Welcome <%= @user.first_name %> to your Menu Builder</h1>
     </div>
   </div>
 </div>
