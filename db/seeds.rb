@@ -1,7 +1,35 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the rails db:seed command (or created alongside the database with db:setup).
-#
-# Examples:
-#
-#   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
-#   Character.create(name: 'Luke', movie: movies.first)
+#Users
+User.create(:first_name => "Tom", :last_name => "Mick", :email => "test@test.com", :password => "password")
+User.create(:first_name => "Michael", :last_name => "Smith", :email => "test1@test.com", :password => "password")
+User.create(:first_name => "Frank", :last_name => "Tank", :email => "test2@test.com", :password => "password")
+User.create(:first_name => "Dan", :last_name => "Marshal", :email => "test3@test.com", :password => "password")
+User.create(:first_name => "Ally", :last_name => "Smith", :email => "test4@test.com", :password => "password")
+User.create(:first_name => "Amanda", :last_name => "Jess", :email => "test5@test.com", :password => "password")
+User.create(:first_name => "Chris", :last_name => "Hockey", :email => "test6@test.com", :password => "password")
+User.create(:first_name => "Bob", :last_name => "Chief", :email => "test7@test.com", :password => "password")
+User.create(:first_name => "Tim", :last_name => "Robin", :email => "test8@test.com", :password => "password")
+User.create(:first_name => "Fran", :last_name => "Palazo", :email => "test9@test.com", :password => "password")
+User.create(:first_name => "Mary", :last_name => "Perz", :email => "test10@test.com", :password => "password")
+User.create(:first_name => "Riley", :last_name => "James", :email => "test11@test.com", :password => "password")
+User.create(:first_name => "James", :last_name => "Smith", :email => "test12@test.com", :password => "password")
+
+#RECIPES
+
+Recipe.create(:name => "Pizza", :calories => 500, :carbs => 45, :protein => 23, :fat => 23)
+Recipe.create(:name => "Bacon", :calories => 500, :carbs => 45, :protein => 33, :fat => 23)
+Recipe.create(:name => "Spaghetti and Meatball", :calories => 1000, :carbs => 55, :protein => 3, :fat => 23)
+Recipe.create(:name => "Tacos", :calories => 250, :carbs => 25, :protein => 23, :fat => 23)
+Recipe.create(:name => "Burrito", :calories => 500, :carbs => 75, :protein => 43, :fat => 63)
+Recipe.create(:name => "Bacon", :calories => 300, :carbs => 15, :protein => 53, :fat => 23)
+Recipe.create(:name => "Waffles", :calories => 200, :carbs => 55, :protein => 23, :fat => 53)
+Recipe.create(:name => "Pancakes", :calories => 400, :carbs => 95, :protein => 13, :fat => 43)
+Recipe.create(:name => "Ice Cream", :calories => 700, :carbs => 25, :protein => 93, :fat => 23)
+Recipe.create(:name => "Cake", :calories => 800, :carbs => 5, :protein => 3, :fat => 23)
+Recipe.create(:name => "Hot Dog", :calories => 100, :carbs => 5, :protein => 3, :fat => 23)
+Recipe.create(:name => "Burger", :calories => 510, :carbs => 15, :protein => 23, :fat => 23)
+Recipe.create(:name => "Ribs", :calories => 500, :carbs => 35, :protein => 3, :fat => 23)
+Recipe.create(:name => "Chicken Sandwich", :calories => 500, :carbs => 45, :protein => 23, :fat => 23)
+Recipe.create(:name => "Fried Chicken", :calories => 200, :carbs => 65, :protein => 3, :fat => 23)
+Recipe.create(:name => "Baked Potato", :calories => 100, :carbs => 5, :protein => 3, :fat => 3)
+Recipe.create(:name => "Sandwich", :calories => 100, :carbs => 45, :protein => 23, :fat => 103)
+Recipe.create(:name => "Brownie", :calories => 100, :carbs => 45, :protein => 23, :fat => 53)
